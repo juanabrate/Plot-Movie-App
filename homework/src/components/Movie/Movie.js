@@ -23,7 +23,7 @@ class Movie extends React.Component {
                 <button className="fav1" onClick = {() => this.props.addMovieFavorite({title: this.props.movie.Title, id: this.props.movie.imdbID})}>
                   Fav
                 </button>
-                <p style={{textAlign: "center", marginTop: -10, width: "30%", marginLeft: "35%", marginTop: 30, lineHeight: "30px", fontSize: 17, fontFamily: "Oxygen", color: "#808080"}}>{this.props.movie.Plot}</p>
+                <p style={{textAlign: "center", marginTop: -10, width: "30%", marginLeft: "35%", marginTop: 20, lineHeight: "30px", fontSize: 17, fontFamily: "Oxygen", color: "#808080"}}>{this.props.movie.Plot}</p>
 
             </div>
 
