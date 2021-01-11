@@ -52,6 +52,7 @@
     background-color: white;
     size: 15px;
     margin-bottom: 33;
+    vertical-align: center;
 }
 .fav:hover {
     background-color: gold;
