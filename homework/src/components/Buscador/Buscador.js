@@ -45,7 +45,7 @@ export class Buscador extends Component {
           {this.props.movies && this.props.movies.map((item,i) => {
               return (
               <li style={{margin: 33, fontFamily:"Oxygen"}} key = {i}>
-              <NavLink style={{textDecoration: "none", color: "#808080"}} to={`/movie/${item.imdbID}`}>
+              <NavLink style={{textDecoration: "none", color: "#808080", fontSize: 19, marginTop: 5}} to={`/movie/${item.imdbID}`}>
                 {item.Title}
               </NavLink>
                 <button className="fav" log = {console.log(item)} onClick = {() => this.props.addMovieFavorite({title: item.Title, id: item.imdbID})}>

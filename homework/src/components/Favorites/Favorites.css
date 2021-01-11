@@ -4,6 +4,7 @@
 
 .x {
     margin-left: 15px;
+    margin-bottom: 25;
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -11,8 +12,8 @@
     background-color: white;
     size: 15px;
     position: absolute;
-    vertical-align: center;
     color: black;
+
 }
 
 .x:hover {
