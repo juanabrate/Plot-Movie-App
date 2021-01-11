@@ -3,11 +3,22 @@
 }
 
 .x {
-    margin-left: 13;
+    margin-left: 15px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #303030;
+    background-color: white;
+    size: 15px;
+    position: absolute;
+    margin-bottom: 23;
 }
 
 .x:hover {
+    
     background-color: black;
     color: white;
     transition-duration: 0.7s;
+
+
 }

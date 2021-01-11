@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { removeArticle } from "../../actions/index";
 import { Link } from 'react-router-dom';
 import {removeMovieFavorite} from "../../actions/index.js"
+import "./Favorites.css"
 
 export class ConnectedList extends Component {
 
@@ -13,11 +14,11 @@ export class ConnectedList extends Component {
         <ul style={{listStyle: 'none', textAlign: 'center', marginTop: 52}}>
           {this.props.movies.map((item,i) => {
               return (
-                  <div style={{textAlign: 'center', paddingBottom: 33, marginTop: 5}} key={i}>
+                  <div style={{textAlign: 'center', paddingBottom: 33, marginTop: 5, display: "block"}} key={i}>
                     <Link style={{textDecoration: "none", color: "#808080"}} to= {`/movie/${item.id}`}>
                       {item.title}
-                    </Link>
-                    <button className='x' onClick={() => this.props.removeMovieFavorite({title: item.title, id: item.imdbID})}>
+                    </Link>    
+                    <button className="x" onClick={() => this.props.removeMovieFavorite({title: item.title, id: item.imdbID})}>
                        X
                     </button>
                   </div>

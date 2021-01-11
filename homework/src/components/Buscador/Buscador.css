@@ -51,6 +51,7 @@
     border-color: #303030;
     background-color: white;
     size: 15px;
+    margin-bottom: 33;
 }
 .fav:hover {
     background-color: gold;
