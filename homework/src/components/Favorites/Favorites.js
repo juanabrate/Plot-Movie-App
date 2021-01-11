@@ -9,12 +9,12 @@ export class ConnectedList extends Component {
   render() {
     return (
       <div>
-        <h2>Películas Favoritas</h2>
-        <ul>
+        <h2 style={{fontFamily: "Oxygen", fontWeight: "bolder", color: "#707070", fontSize: 22, textAlign: 'center'}}>Wishes</h2>
+        <ul style={{listStyle: 'none', textAlign: 'center'}}>
           {this.props.movies.map((item,i) => {
               return (
                   <div key={i}>
-                    <Link to= {`/movie/${item.id}`}>
+                    <Link style={{textDecoration: "none", color: "#808080", textAlign: 'center', margin: 5}} to= {`/movie/${item.id}`}>
                       {item.title}
                     </Link>
                     <button onClick={() => this.props.removeMovieFavorite({title: item.title, id: item.imdbID})}>
