@@ -9,15 +9,15 @@ export class ConnectedList extends Component {
   render() {
     return (
       <div>
-        <h2 style={{fontFamily: "Oxygen", fontWeight: "bolder", color: "#707070", fontSize: 22, textAlign: 'center'}}>Wishes</h2>
-        <ul style={{listStyle: 'none', textAlign: 'center'}}>
+        <h2 style={{fontFamily: "Oxygen", fontWeight: "bolder", color: "#707070", fontSize: 25, textAlign: 'center',  marginRight: '-2%'}}>Your movies</h2>
+        <ul style={{listStyle: 'none', textAlign: 'center', marginTop: 52}}>
           {this.props.movies.map((item,i) => {
               return (
-                  <div key={i}>
-                    <Link style={{textDecoration: "none", color: "#808080", textAlign: 'center', margin: 5}} to= {`/movie/${item.id}`}>
+                  <div style={{textAlign: 'center', paddingBottom: 33, marginTop: 5}} key={i}>
+                    <Link style={{textDecoration: "none", color: "#808080"}} to= {`/movie/${item.id}`}>
                       {item.title}
                     </Link>
-                    <button onClick={() => this.props.removeMovieFavorite({title: item.title, id: item.imdbID})}>
+                    <button className='x' onClick={() => this.props.removeMovieFavorite({title: item.title, id: item.imdbID})}>
                        X
                     </button>
                   </div>

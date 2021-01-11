@@ -1,3 +1,13 @@
 .cnt {
     padding-top: 10px;
 }
+
+.x {
+    margin-left: 13;
+}
+
+.x:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.7s;
+}
