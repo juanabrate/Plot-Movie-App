@@ -15,7 +15,7 @@ export class ConnectedList extends Component {
           {this.props.movies.map((item,i) => {
               return (
                   <div style={{textAlign: 'center', paddingBottom: 33, marginTop: 8, justifyContent: "center", flexDirection: "column"}} key={i}>
-                    <Link style={{textDecoration: "none", color: "#808080", fontSize: 18}} to= {`/movie/${item.id}`}>
+                    <Link style={{textDecoration: "none", color: "#808080",  fontSize: 18}} to= {`/movie/${item.id}`}>
                       {item.title}
                     </Link>    
                     <button className="x" onClick={() => this.props.removeMovieFavorite({title: item.title, id: item.imdbID})}>
